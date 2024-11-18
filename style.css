@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/clear-snake-game-character-z6jd7jtsl04g6mxx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.game-container {
+    text-align: center;
+}
+
+canvas {
+    border: 5px solid black;
+    background-image: url(https://img.freepik.com/premium-vector/abstract-paper-background-with-shadows-green-colors_444390-12263.jpg);
+}
+
+.controls {
+    margin-top: 10px;
+    padding: 10px;
+    width: 380px;
+    border: 2px solid black;
+    background-color: rgb(153, 204, 255);
+    display: inline-block;
+}
+
+select, button {
+    padding: 5px;
+    margin: 5px;
+    background-color: ghostwhite;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.score {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#gameOverMessage {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+/* media */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        height: auto; 
+    }
+
+    .game-container {
+        text-align: center;
+    }
+
+    canvas {
+        width: 90%;
+        height: auto;
+        border-width: 3px;
+    }
+
+    .controls {
+        width: auto; 
+        padding: 8px;
+    }
+
+    select, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    #gameOverMessage {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    canvas {
+        width: 100%; 
+        border-width: 2px;
+    }
+
+    .controls {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    select, button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .score {
+        font-size: 16px;
+    }
+
+    #gameOverMessage {
+        font-size: 18px;
+    }
+}
